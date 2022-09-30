@@ -5,8 +5,6 @@
 - DetailShow, some sort of Price, History
 chart or something like that. 
 
-- We will be hosting this. (Github Pages, Netlify / Heroku).
-
 - HTML / CSS / JS
 
 - CoinGecko.

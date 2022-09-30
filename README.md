@@ -18,10 +18,9 @@ chart or something like that.
 # Wireframing
 - It is drawing a rough sketch of how the website is going to look. This is to get an idea about what sections of the page we will have. 
 
-# Resources:
+# Resources for color paletts:
 - https://coolors.co/
 - https://colors.muz.li/
 - https://mycolor.space/
 - https://cssgradient.io/
 
-01:50:00

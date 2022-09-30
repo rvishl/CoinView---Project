@@ -1,0 +1,47 @@
+body {
+    margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
+}
+
+nav {
+    height: 3rem;
+    background-color: rgb(3, 102, 102);
+    color: white;
+}
+
+.flex_container {
+    display: flex;
+}
+
+.main > img {
+    border: 2px solid green;
+    border-radius: 50%;
+    width: 30%;
+}
+
+.trending_coin {
+    background-color: rgb(3, 102, 102);
+    padding: 1rem;
+    justify-content: space-evenly;
+}
+
+
+
+.features {
+    padding: 0.5rem;
+    background-color: grey;
+
+}
+
+.card {
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.features > .card { 
+    text-align: center;
+}

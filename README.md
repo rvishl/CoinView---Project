@@ -22,3 +22,8 @@ chart or something like that.
 - https://mycolor.space/
 - https://cssgradient.io/
 
+
+# Note:
+- &emsp; - It is used for 1 tab that is 4 space.
+- &nbsp; - it is used for 1 single space.
+

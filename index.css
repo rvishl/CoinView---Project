@@ -14,6 +14,16 @@ nav {
 
 .flex_container {
     display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.main {
+    padding: 5rem;
+    justify-content: space-evenly;
+    font-family: 'Mukta', sans-serif;
+    font-size: xx-large;
+    align-items: center;
 }
 
 .main > img {
@@ -24,24 +34,52 @@ nav {
 
 .trending_coin {
     background-color: rgb(3, 102, 102);
-    padding: 1rem;
+    padding: 2rem;
     justify-content: space-evenly;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
+.trending_coin > .card {
+    padding: 0.5rem 1rem;
+}
 
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.margin_left {
+    margin-left: 1rem;
+}
 
 .features {
-    padding: 0.5rem;
+    padding: 2rem;
     background-color: grey;
-
+    justify-content: space-around;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .card {
-    padding: 0.5rem;
+    padding: 1rem;
     border-radius: 5px;
     background-color: white;
 }
 
 .features > .card { 
     text-align: center;
+    padding: 1rem 2rem;
+    width: 25vw;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 1rem;
+}
+
+footer > p {
+    padding: 0.5rem;
 }

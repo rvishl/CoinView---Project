@@ -34,13 +34,33 @@ nav {
 
 .trending_coin {
     background-color: rgb(3, 102, 102);
-    padding: 2rem;
-    justify-content: space-evenly;
-    font-family: 'Source Sans Pro', sans-serif;
+    padding: 2rem;   
+    overflow-x: hidden; 
 }
 
-.trending_coin > .card {
+.trending_coin > .scroll_anim {
+    justify-content: space-evenly;
+    font-family: 'Source Sans Pro', sans-serif;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    position: relative;
+    animation-name: smooth_scroll;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* left: -10rem; */
+    /* overflow-x: scroll; */
+}
+
+.trending_coin .card {
     padding: 0.5rem 1rem;
+    margin: 0px 5rem;
+    width: 10rem;
+    flex-shrink: 0;;
+}
+
+.trending_coin .card > img {
+    width: 50px;
 }
 
 .float-left {
@@ -82,4 +102,13 @@ footer {
 
 footer > p {
     padding: 0.5rem;
+}
+
+@keyframes smooth_scroll {
+    from {
+        left: 0%;
+    }
+    to {
+        left: -360%;
+    }
 }

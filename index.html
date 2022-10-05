@@ -33,48 +33,203 @@
             <img src="./asset/pic_logo.jpg" alt="Main_image" />
         </section>
 
-        <!-- Second section containing top 4/5 coin information -->
-        <section class="trending_coin flex_container">
-            <div class="card">            
-                <img src="./asset/coin_logo.png" alt="card-img" class="float-left" />
-                <div class="float-right margin_left">
-                    <h3>Bit Coins</h3>
-                    <p>₹ 3000</p>
-                </div>            
-            </div>
+        <!-- Second section containing top some coin information -->
+        <section class="trending_coin">
+            <div class="scroll_anim flex_container">        
+                <!-- First Coin -->
+                <div class="card">            
+                    
+                    <img src="./asset/btc_logo.png" alt="BTC-Img" class="float-left" />
+                    
+                    <div class="float-right margin_left">
+                        <h3>BTC</h3>
+                        <p>(Bit Coins)</h4>    
+                        <h4>₹ <span id="bitcoin_price_container"></span></h4>                
+                    </div>   
+                
+                </div>
+                
+                <!-- Second Coin -->
+                <div class="card">
 
-            <div class="card">            
-                <img src="./asset/coin_logo.png" alt="card-img" class="float-left" />
-                <div class="float-right margin_left">
-                    <h3>Bit Coins</h3>
-                    <p>₹ 3000</p>
-                </div>            
-            </div>
+                    <img src="./asset/eth_logo.png" alt="ETH-Img" class="float-left" />
+                    
+                    <div class="float-right margin_left">
+                        <h3>ETH</h3>
+                        <p>(Ethereum)</p>
+                        <h4>₹ <span id="ethereum_price_container"></span></h4>
+                    </div>
+                    
+                </div>
+                
+                <!-- Third Coin -->
+                <div class="card">
 
-            <div class="card">            
-                <img src="./asset/coin_logo.png" alt="card-img" class="float-left" />
-                <div class="float-right margin_left">
-                    <h3>Bit Coins</h3>
-                    <p>₹ 3000</p>
-                </div>            
-            </div>
+                    <img src="./asset/usdt_logo.png" alt="USDT-Img" class="float-left" />
+                    
+                    <div class="float-right margin_left">
+                        <h3>USDT</h3>
+                        <p>(Tether)</p>
+                        <h4>₹ <span id="tether_price_container"></span></h4>
+                    </div>
+                    
+                </div>
+                
+                <!-- Forth Coin -->
+                <div class="card">
+                    
+                    <img src="./asset/bnb_logo.png" alt="BNB-Img" class="float-left" />
 
-            <div class="card">            
-                <img src="./asset/coin_logo.png" alt="card-img" class="float-left" />
-                <div class="float-right margin_left">
-                    <h3>Bit Coins</h3>
-                    <p>₹ 3000</p>
-                </div>            
-            </div>
+                    <div class="float-right margin_left">
+                        <h3>BNB</h3>
+                        <p>(BinanceCoin)</p>
+                        <h4>₹ <span id="binance_price_container"></span></h4>
+                    </div>
+                    
+                </div>
+                
+                <!-- Fifth Coin -->
+                <div class="card">
 
-            <div class="card">            
-                <img src="./asset/coin_logo.png" alt="card-img" class="float-left" />
-                <div class="float-right margin_left">
-                    <h3>Bit Coins</h3>
-                    <p>₹ 3000</p>
-                </div>            
-            </div>            
-            
+                    <img src="./asset/doge_logo.png" alt="DOGE-Img" class="float-left" />
+                    
+                    <div class="float-right margin_left">
+                        <h3>DOGE</h3>
+                        <p>(DogeCoin)</p>
+                        <h4>₹ <span id="doge_price_container"></span></h4>
+                    </div>
+                    
+                </div>
+                
+                <!-- Six Coin -->
+                <div class="card">
+
+                    <img src="./asset/sol_logo.png" alt="SOL-Img" class="float-left" />
+                    
+                    <div class="float-right margin_left">
+                        <h3>SOL</h3>
+                        <p>(Solana)</p>
+                        <h4>₹ <span id="solana_price_container"></span></h4>
+                    </div>
+                    
+                </div>
+                
+                <!-- Seven Coin -->
+                <div class="card">
+
+                    <img src="./asset/ada_logo.png" alt="ADA-Img" class="float-left" />
+                    
+                    <div class="float-right margin_left">
+                        <h3>ADA</h3>
+                        <p>(Cardano)</p>
+                        <h4>₹ <span id="cardano_price_container"></span></h4>
+                    </div>
+                    
+                </div>
+                
+                <!-- Eight Coin -->
+                <div class="card">
+
+                    <img src="./asset/hnt_logo.png" alt="HNT-Img" class="float-left" />
+                    
+                    <div class="float-right margin_left">
+                        <h3>HNT</h3>
+                        <p>(Helium)</p>
+                        <h4>₹ <span id="helium_price_container"></span></h4>
+                    </div>
+                    
+                </div>
+                
+                <!-- Nine Coin -->
+                <div class="card">
+
+                    <img src="./asset/dot_logo.png" alt="DOT-Img" class="float-left" />
+                    
+                    <div class="float-right margin_left">
+                        <h3>DOT</h3>
+                        <p>(Polkadot)</p>
+                        <h4>₹ <span id="polkadot_price_container"></span></h4>
+                    </div>
+                    
+                </div>
+                
+                <!-- Ten Coin -->
+                <div class="card">
+
+                    <img src="./asset/ltc_logo.png" alt="LTC-Img" class="float-left" />
+                    
+                    <div class="float-right margin_left">
+                        <h3>LTC</h3>
+                        <p>(Litecoin)</p>
+                        <h4>₹ <span id="litecoin_price_container"></span></h4>
+                    </div>
+                    
+                </div>
+                
+                <!-- Eleven Coin -->
+                <div class="card">
+
+                    <img src="./asset/uni_logo.png" alt="UNI-Img" class="float-left" />
+                    
+                    <div class="float-right margin_left">
+                        <h3>UNI</h3>
+                        <p>(Uniswap)</p>
+                        <h4>₹ <span id="uniswap_price_container"></span></h4>
+                    </div>
+                
+                </div>
+                
+                <!-- Twelve Coin -->
+                <div class="card">
+
+                    <img src="./asset/link_logo.png" alt="LINK-Img" class="float-left" />
+                    
+                    <div class="float-right margin_left">
+                        <h3>lINK</h3>
+                        <p>(Chainlink)</p>
+                        <h4>₹ <span id="chainlink_price_container"></span></h4>
+                    </div>
+                    
+                </div>
+                
+                <!-- Thirteen Coin -->
+                <div class="card">
+                    <img src="./asset/atom_logo.png" alt="ATOM-Img" class="float-left" />
+                    
+                    <div class="float-right margin_left">
+                        <h3>ATOM</h3>
+                        <p>(Cosmos)</p>
+                        <h4>₹ <span id="cosmos_price_container"></span></h4>
+                    </div>
+                    
+                </div>
+                
+                <!-- Fourtheen Coin -->
+                <div class="card">
+
+                    <img src="./asset/dai_logo.png" alt="DAI-Img" class="float-left" />
+                    
+                    <div class="float-right margin_left">
+                        <h3>DAI</h3>
+                        <p>(DaiCoin)</p>
+                        <h4>₹ <span id="dai_price_container"></span></h4>
+                    </div>
+                    
+                </div>
+                
+                <!-- Fifteen Coin -->
+                <div class="card">
+                    
+                    <img src="./asset/flow_logo.png" alt="FLOW-Img" class="float-left" />
+
+                    <div class="float-right margin_left">
+                        <h3>FLOW</h3>
+                        <p>(FlowCoin)</p>
+                        <h4>₹ <span id="flow_price_container"></span></h4>
+                    </div>
+                    
+                </div>
+            </div>
         </section>
         
         <!-- Third section containing the main features of the website -->

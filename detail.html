@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Detail | CryptoView</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="./detail.css" />
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js" defer></script>
+        <script src="./detail.js" defer></script>
+        
+    </head>
+    <body>
+        <nav>
+            <h1>Nav bar</h1>
+        </nav>
+
+        <!-- Price and Description Container -->
+        <section class="description_price flex_container">
+            <!-- Description Container -->
+            <div class="description flex_container">
+                <img src="" alt="coin-img" id="coin_img" />
+                <div class="desc_width">
+                    <h1 id="coin_name"></h1>
+                    <p class="text_justify" id="coin_description"></p>
+                </div>
+            </div>
+
+            <!-- Price Container -->
+            <div class="price">
+                <table class="table_margin">
+                    <tbody>
+                        <tr>
+                            <td>INR</td>
+                            <td><span id="inr_price"></span></td>
+                        </tr>
+                        <tr>
+                            <td>USD</td>
+                            <td><span id="usd_price"></span></td>
+                        </tr>
+                        <tr>
+                            <td>EUR</td>
+                            <td><span id="eur_price"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Historical Chart Container -->
+        <section class="historical">
+            <canvas id="myChart" width="400" height="400"></canvas>
+        </section>
+    </body>
+</html>

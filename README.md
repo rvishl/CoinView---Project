@@ -51,3 +51,9 @@ chart or something like that.
 - https://www.chartjs.org/
 # Chart Library CDN
 - https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js
+
+
+UNIX Timestamp -> The number of second since January 1st, 1970.
+In JS, they save the number of milliseconds since Jan 01, 1970.
+
+1 second = 1000 milliseconds.

@@ -24,6 +24,17 @@
     text-align: justify;
 }
 
-.table_margin {
+.margin_top_1_25 {
     margin-top: 1.25rem;
+}
+
+.margin_top_2 {
+    margin-top: 2rem;
+}
+
+.historical {
+    position: relative;
+    height: 15rem;
+    width: 50vw;
+    margin: auto;
 }

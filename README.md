@@ -57,3 +57,23 @@ UNIX Timestamp -> The number of second since January 1st, 1970.
 In JS, they save the number of milliseconds since Jan 01, 1970.
 
 1 second = 1000 milliseconds.
+
+## Query Parameter
+- http://127.0.0.1:5500.CoinView.html?q=bit => Show all bitcoin things (Search for bit)
+
+- http://127.0.0.1:5500.CoinView.html?q=eth => Show all eth things. (Search for ETH).
+
+Two parts:
+1. When input is submitted. Submit the form and prepare the Query parameter.
+2. When the page is loaded, check for query parameter and load that data.
+
+
+## String Templating
+
+Hi, I am <name>
+
+let name = 'Vishal';
+"Hi, I am " + name;
+
+console.log("Hi, I am " + name1 + " " + name2 + " from " + loc);
+console.log(`Hi, I am ${name1} ${name2} from ${loc}`); //String templating, String Literal, Template Literal.

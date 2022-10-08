@@ -21,9 +21,9 @@ function showPrice(data) {
     const usd_price = document.getElementById('usd_price');
     const eur_price = document.getElementById('eur_price');
 
-    inr_price.innerText = data.bitcoin.inr;
-    usd_price.innerText = data.bitcoin.usd;
-    eur_price.innerText = data.bitcoin.eur;
+    inr_price.innerText = data[query].inr;
+    usd_price.innerText = data[query].usd;
+    eur_price.innerText = data[query].eur;
     // console.log(data);
 }
 
@@ -33,9 +33,16 @@ function showHistory(data) {
 }
 
 //fetch the data through API
-fetch("https://api.coingecko.com/api/v3/coins/bitcoin?localization=false&tickers=false&market_data=false&community_data=false&developer_data=false&sparkline=true").then(convertToJson).then(showInformation);
-fetch("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=inr%2Cusd%2Ceur").then(convertToJson).then(showPrice);
-fetch("https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=inr&days=10&interval=daily").then(convertToJson).then(showHistory);
+
+let url = new URL(window.location.href);
+let params = new URLSearchParams(url.search);
+let query = params.get("coin");
+
+// console.log(query);
+
+fetch(`https://api.coingecko.com/api/v3/coins/${query}?localization=false&tickers=false&market_data=false&community_data=false&developer_data=false&sparkline=true`).then(convertToJson).then(showInformation);
+fetch(`https://api.coingecko.com/api/v3/simple/price?ids=${query}&vs_currencies=inr%2Cusd%2Ceur`).then(convertToJson).then(showPrice);
+fetch(`https://api.coingecko.com/api/v3/coins/${query}/market_chart?vs_currency=inr&days=10&interval=daily`).then(convertToJson).then(showHistory);
 
 //return month string on the basis of month number(1-12).
 function month(str) {
@@ -94,8 +101,8 @@ function showGraph(history_data) {
         // console.log(single_price);
     }
 
-    console.log(labels);
-    console.log(prices);
+    // console.log(labels);
+    // console.log(prices);
 
     const ctx = document.getElementById('myChart').getContext('2d');
     const myChart = new Chart(ctx, {

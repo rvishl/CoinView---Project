@@ -6,6 +6,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mukta&family=Raleway&family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="./asset/logo.png" />
+
+        <script src="https://kit.fontawesome.com/720abb2d5d.js" crossorigin="anonymous"></script>
+
         <link rel="stylesheet" href="./detail.css" />
 
         <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js" defer></script>
@@ -13,9 +22,16 @@
         
     </head>
     <body>
-        <nav>
-            <h1>Nav bar</h1>
+        <!-- Navigation Bar -->
+        <nav class="flex_container">
+            <div class="flex_container">
+                <img src="./asset/logo.png" alt="Nav_logo" class="nav_logo" />
+                <h1>CoinView</h1>
+            </div>
+            <a href="./search.html" class="anchor_btn">Search</a>
         </nav>
+
+        <br />
 
         <!-- Price and Description Container -->
         <section class="description_price flex_container">
@@ -55,6 +71,22 @@
         <section class="historical margin_top_2">
             <canvas id="myChart"></canvas>
         </section>
+
+        <!-- This is the footer containing copyright, created by etc. etc.. -->
+        <footer>
+            <i class="fa-brands fa-whatsapp"></i>
+            &emsp;
+            <i class="fa-brands fa-facebook"></i>
+            &emsp;
+            <i class="fa-brands fa-linkedin-in"></i>
+            &emsp;
+            <i class="fa-brands fa-instagram"></i>
+            &emsp;
+            <i class="fa-brands fa-twitter"></i>
+            &emsp;
+            <i class="fa-brands fa-youtube"></i>
+            <p>Copyright &copy; v &amp; r<p>
+        </footer>
 
     </body>
 </html>

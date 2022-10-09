@@ -15,6 +15,11 @@ nav {
     justify-content: space-between;
 }
 
+nav h1 {
+    margin-top: 4px;
+    margin-left: -8px;
+}
+
 .flex_container {
     display: flex;
     flex-wrap: wrap;
@@ -111,7 +116,8 @@ nav {
     box-shadow: 8px 6px 30px lightsalmon;
 }
 
-footer {
+footer {   
+    height: 2.5rem;
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
     padding: 1rem;
@@ -137,10 +143,6 @@ footer > p {
 
 nav > h1 {
     display: inline;
-}
-
-nav > div {
-    align-item: center;
 }
 
 .anchor_btn {

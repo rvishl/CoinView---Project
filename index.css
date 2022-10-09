@@ -8,8 +8,11 @@ h1, h2, h3, h4, h5, h6, p {
 
 nav {
     height: 3rem;
-    background-color: rgb(3, 102, 102);
+    background-color: gray;
     color: white;
+    padding: 0.25rem 1.5rem;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .flex_container {
@@ -57,7 +60,7 @@ nav {
     margin: 0px 5rem;
     width: 10rem;
     flex-shrink: 0;;
-    box-shadow: 8px 6px 5px;
+    box-shadow: 8px 6px 5px black;
 }
 
 .trending_coin .card > img {
@@ -90,9 +93,22 @@ nav {
 }
 
 .features > .card { 
+    position: relative;
+    top: 0px;
+    left: 0px;
     text-align: center;
     padding: 1rem 2rem;
     width: 25vw;
+    border: 1px solid black;
+    box-shadow: 4px 3px 20px lightcoral;
+    transition: 0.25s all;
+}
+
+.features > .card:hover {
+    position: relative;
+    top: -5px;
+    left: -5px;
+    box-shadow: 8px 6px 30px lightsalmon;
 }
 
 footer {
@@ -111,5 +127,62 @@ footer > p {
     }
     to {
         left: -360%;
+    }
+}
+
+.nav_logo {
+    width: 2.5rem;
+    height: 2.25rem;
+}
+
+nav > h1 {
+    display: inline;
+}
+
+nav > div {
+    align-item: center;
+}
+
+.anchor_btn {
+    border: 1px solid black;
+    border-radius: 8px;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    transition: 0.25s all;
+}
+
+.anchor_btn:hover {
+    background-color: white;
+    color: red;
+    border-color: yellow;
+}
+
+@media screen and (max-width: 300px) {
+    nav h1 {
+        display: none;
+    }
+    body{
+        color: green;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    
+    .main > img {
+        width: 50vw;
+    }
+
+    .main > h1 {
+        font-size: 30px;        
+    }
+
+    .features {
+        flex-direction: column;
+        align-content: stretch;
+    }
+
+    .features > .card {
+        width: initial;
     }
 }
